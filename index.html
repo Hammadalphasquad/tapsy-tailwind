@@ -1,90 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="input.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
     <title>Document</title>
-</head>
-<body>
-    <div class="bg-cover bg-no-repeat bg-center h-screen relative" style="background-image: url(./images/firstpage.png);">
-    <img src="./images/Star.png" alt="" class="absolute right-0 bottom-[-15rem] w-[430px]">
-    <!-- nav-bar -->
-        <div class="flex items-center justify-between max-w-[99rem] m-auto  py-10">
+  </head>
+  <body>
+    <div
+      class="bg-cover bg-no-repeat bg-center h-screen relative"
+      style="background-image: url(./images/firstpage.png)"
+    >
+      <img
+        src="./images/Star.png"
+        alt=""
+        class="absolute right-0 bottom-[-15rem] w-[430px]"
+      />
+      <!-- nav-bar -->
+      <div class="flex items-center justify-between max-w-[99rem] m-auto py-10">
         <div>
           <img src="./images/Logo.png" alt="" />
         </div>
-        <div class="flex space-x-10 text-white text-[1.1rem] font-mono">
+        <div class="flex space-x-10 text-white text-2xl font-mono">
           <p>Roadmap</p>
           <p>Perks</p>
           <p>Features</p>
           <p>Team</p>
           <p>FAQs</p>
         </div>
-        <div class="flex  items-center gap-7">
-            <div class="flex gap-16">
-                <p >
-                    <svg
-                      width="30"
-                      height="23"
-                      viewBox="0 0 30 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M25.4129 1.92624C23.4709 1.02637 21.3945 0.372387 19.2236 0C18.957 0.477386 18.6455 1.11948 18.4308 1.63027C16.1231 1.28655 13.8367 1.28655 11.5714 1.63027C11.3567 1.11948 11.0382 0.477386 10.7692 0C8.59601 0.372387 6.51719 1.02878 4.57524 1.93101C0.658303 7.7932 -0.403514 13.5098 0.127396 19.1452C2.72532 21.0666 5.24301 22.2338 7.71822 22.9976C8.32936 22.1646 8.87442 21.2791 9.34397 20.3458C8.44969 20.0093 7.59316 19.5939 6.78384 19.1118C6.99855 18.9543 7.20857 18.7895 7.41148 18.6201C12.3477 20.9067 17.7111 20.9067 22.5884 18.6201C22.7937 18.7895 23.0037 18.9543 23.2161 19.1118C22.4044 19.5963 21.5455 20.0116 20.6512 20.3482C21.1208 21.2791 21.6635 22.167 22.2769 23C24.7545 22.2362 27.2746 21.069 29.8725 19.1452C30.4954 12.6123 28.8083 6.94823 25.4129 1.92624ZM10.0165 15.6795C8.53465 15.6795 7.31944 14.3094 7.31944 12.6409C7.31944 10.9725 8.5087 9.60007 10.0165 9.60007C11.5243 9.60007 12.7394 10.9701 12.7135 12.6409C12.7158 14.3094 11.5243 15.6795 10.0165 15.6795ZM19.9834 15.6795C18.5016 15.6795 17.2864 14.3094 17.2864 12.6409C17.2864 10.9725 18.4756 9.60007 19.9834 9.60007C21.4912 9.60007 22.7064 10.9701 22.6805 12.6409C22.6805 14.3094 21.4912 15.6795 19.9834 15.6795Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </p>
-                  <p>
-                    <svg 
-                      width="30"
-                      height="25"
-                      viewBox="0 0 30 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.42098 24.9993C20.7441 24.9993 26.9385 15.3787 26.9385 7.0518C26.9385 6.78113 26.9385 6.51045 26.9267 6.24049C28.1328 5.34469 29.1735 4.23592 30 2.96614C28.8741 3.47472 27.681 3.80988 26.4593 3.96074C27.7468 3.17115 28.7107 1.92965 29.172 0.466861C27.9621 1.20242 26.6374 1.71888 25.2562 1.99357C24.4117 1.07057 23.3157 0.429114 22.1106 0.152548C20.9056 -0.124018 19.6473 -0.022916 18.499 0.44272C17.3508 0.908357 16.3658 1.717 15.672 2.7636C14.9782 3.8102 14.6077 5.04638 14.6086 6.31153C14.6117 6.79532 14.664 7.27746 14.7646 7.75015C12.3164 7.62378 9.92147 6.97141 7.7353 5.83539C5.54913 4.69936 3.62056 3.10506 2.07475 1.15597C1.28754 2.54606 1.04655 4.1911 1.40077 5.7567C1.75498 7.3223 2.67782 8.69096 3.98169 9.58447C3.00532 9.54967 2.05063 9.28002 1.19479 8.79731V8.88257C1.19606 10.3388 1.68797 11.75 2.5874 12.8777C3.48683 14.0054 4.73864 14.7804 6.13134 15.0718C5.60355 15.2211 5.05831 15.2956 4.51078 15.2935C4.12382 15.2942 3.73768 15.2571 3.3576 15.1826C3.75032 16.4371 4.51654 17.5341 5.54877 18.3197C6.58099 19.1053 7.8274 19.5401 9.1131 19.5631C6.93249 21.3193 4.23826 22.2723 1.46453 22.2684C0.975089 22.2708 0.485974 22.2421 0 22.1825C2.81566 24.0233 6.0864 25.0009 9.42653 25"
-                        fill="white"
-                      />
-                    </svg>
-                  </p>
-                 
-            </div>
-           
-          <p class="bg-[#FF2782] py-3 px-6 rounded-lg text-xl text-white ml-16">
+        <div class="flex items-center gap-7">
+          <div class="flex gap-16">
+            <p>
+              <svg
+                width="30"
+                height="23"
+                viewBox="0 0 30 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.4129 1.92624C23.4709 1.02637 21.3945 0.372387 19.2236 0C18.957 0.477386 18.6455 1.11948 18.4308 1.63027C16.1231 1.28655 13.8367 1.28655 11.5714 1.63027C11.3567 1.11948 11.0382 0.477386 10.7692 0C8.59601 0.372387 6.51719 1.02878 4.57524 1.93101C0.658303 7.7932 -0.403514 13.5098 0.127396 19.1452C2.72532 21.0666 5.24301 22.2338 7.71822 22.9976C8.32936 22.1646 8.87442 21.2791 9.34397 20.3458C8.44969 20.0093 7.59316 19.5939 6.78384 19.1118C6.99855 18.9543 7.20857 18.7895 7.41148 18.6201C12.3477 20.9067 17.7111 20.9067 22.5884 18.6201C22.7937 18.7895 23.0037 18.9543 23.2161 19.1118C22.4044 19.5963 21.5455 20.0116 20.6512 20.3482C21.1208 21.2791 21.6635 22.167 22.2769 23C24.7545 22.2362 27.2746 21.069 29.8725 19.1452C30.4954 12.6123 28.8083 6.94823 25.4129 1.92624ZM10.0165 15.6795C8.53465 15.6795 7.31944 14.3094 7.31944 12.6409C7.31944 10.9725 8.5087 9.60007 10.0165 9.60007C11.5243 9.60007 12.7394 10.9701 12.7135 12.6409C12.7158 14.3094 11.5243 15.6795 10.0165 15.6795ZM19.9834 15.6795C18.5016 15.6795 17.2864 14.3094 17.2864 12.6409C17.2864 10.9725 18.4756 9.60007 19.9834 9.60007C21.4912 9.60007 22.7064 10.9701 22.6805 12.6409C22.6805 14.3094 21.4912 15.6795 19.9834 15.6795Z"
+                  fill="white"
+                />
+              </svg>
+            </p>
+            <p>
+              <svg
+                width="30"
+                height="25"
+                viewBox="0 0 30 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.42098 24.9993C20.7441 24.9993 26.9385 15.3787 26.9385 7.0518C26.9385 6.78113 26.9385 6.51045 26.9267 6.24049C28.1328 5.34469 29.1735 4.23592 30 2.96614C28.8741 3.47472 27.681 3.80988 26.4593 3.96074C27.7468 3.17115 28.7107 1.92965 29.172 0.466861C27.9621 1.20242 26.6374 1.71888 25.2562 1.99357C24.4117 1.07057 23.3157 0.429114 22.1106 0.152548C20.9056 -0.124018 19.6473 -0.022916 18.499 0.44272C17.3508 0.908357 16.3658 1.717 15.672 2.7636C14.9782 3.8102 14.6077 5.04638 14.6086 6.31153C14.6117 6.79532 14.664 7.27746 14.7646 7.75015C12.3164 7.62378 9.92147 6.97141 7.7353 5.83539C5.54913 4.69936 3.62056 3.10506 2.07475 1.15597C1.28754 2.54606 1.04655 4.1911 1.40077 5.7567C1.75498 7.3223 2.67782 8.69096 3.98169 9.58447C3.00532 9.54967 2.05063 9.28002 1.19479 8.79731V8.88257C1.19606 10.3388 1.68797 11.75 2.5874 12.8777C3.48683 14.0054 4.73864 14.7804 6.13134 15.0718C5.60355 15.2211 5.05831 15.2956 4.51078 15.2935C4.12382 15.2942 3.73768 15.2571 3.3576 15.1826C3.75032 16.4371 4.51654 17.5341 5.54877 18.3197C6.58099 19.1053 7.8274 19.5401 9.1131 19.5631C6.93249 21.3193 4.23826 22.2723 1.46453 22.2684C0.975089 22.2708 0.485974 22.2421 0 22.1825C2.81566 24.0233 6.0864 25.0009 9.42653 25"
+                  fill="white"
+                />
+              </svg>
+            </p>
+          </div>
+
+          <p
+            class="bg-[#FF2782] py-3 px-6 rounded-lg text-xl cursor-pointer text-white ml-16"
+          >
             Connect Wallet
-                    </p>
+          </p>
         </div>
-       
       </div>
       <!-- first-portion -->
-      <div class="max-w-[99rem] my-44 m-auto" >
-<p class="text-white text-[1.8rem]">
-WELCOME TO
-</p>
-<p class="text-white text-[7rem] font-extrabold ">
-    The  Keroverse
-</p>
-<p class="text-white text-[2.4rem] max-w-[90rem]">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-</p>
+      <div class="max-w-[99rem] my-44 m-auto">
+        <p class="text-white text-[1.8rem]">WELCOME TO</p>
+        <p class="text-white text-[7rem] font-extrabold">The Keroverse</p>
+        <p class="text-white text-[2.4rem] max-w-[90rem]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
       </div>
     </div>
     <!-- second-portion -->
-    <div class="max-w-[95rem] m-auto relative">
-        <p class="text-black -rotate-90 absolute top-[50rem] left-[-8rem] font-bold text-xl">
-            Collection of 5000</p>
-<img src="./second-portion/img1.png" alt="" class="absolute top-80 left-0 ">
+    <div class="max-w-[95rem] m-auto relative h-[175rem]">
+      <p
+        class="text-black -rotate-90 absolute top-[50rem] left-[-8rem] font-bold text-xl"
+      >
+        Collection of 5000
+      </p>
+      <img
+        src="./second-portion/img1.png"
+        alt=""
+        class="absolute top-80 left-0"
+      />
 
-<p class="-rotate-90 font-bold text-xl absolute right-[-10.5rem] top-[67rem]">Made of 200 Unique assets</p>
-<img src="./second-portion/img2.png" alt="" class="absolute right-0 top-[40rem]">
+      <p
+        class="-rotate-90 font-bold text-xl absolute right-[-10.5rem] top-[79rem]"
+      >
+        Made of 200 Unique assets
+      </p>
+      <img
+        src="./second-portion/img2.png"
+        alt=""
+        class="absolute right-0 top-[52rem]"
+      />
 
-<p>
-    Using Ethereum Blockchain  
-</p>
+      <p
+        class="text-black -rotate-90 font-bold text-xl absolute left-[-10.5rem] top-[113rem]"
+      >
+        Using Ethereum Blockchain
+      </p>
+      <img
+        src="./second-portion/img3.png"
+        alt=""
+        class="absolute top-[85rem]"
+      />
+
+      <p
+        class="text-black -rotate-90 font-bold text-xl absolute right-[-8rem] top-[148rem]"
+      >
+        Double your profit
+      </p>
+      <img
+        src="./second-portion/img4.png"
+        alt=""
+        class="absolute right-0 top-[118rem]"
+      />
     </div>
-</body>
+    <!-- third-portion -->
+    <div class="bg-[#FF2782] h-screen flex flex-col justify-center">
+      <div class="text-white">
+        <p class="font-bold text-8xl max-w[86rem text-center">
+          WE’LL BE <strong>LAUNCHING SOON!</strong>
+        </p>
+        <p class="font-bold text-8xl max-w[86rem text-center">
+          LOREM IPSUM DOLAR SIT AMET
+        </p>
+        <p class="font-bold text-8xl max-w[86rem] text-center">
+          <strong>CONSECTETUR</strong> ADIPISCING
+        </p>
+        <img src="./time.png" alt="" class="m-auto mt-20" />
+      </div>
+    </div>
+    <!-- fourth-portion -->
+    <div class="text-center mt-36 max-w-[99rem] m-auto">
+      <p class="text-[5rem] font-extrabold mb-7">Keroverse Ecosystem</p>
+      <p class="text-[1.5rem] max-w-5xl m-auto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam.
+        <br />
+        <br />
+        Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+      <div class="my-40 flex justify-center justify-evenly items-center">
+        <p
+          class="bg-black text-white px-10 py-3 uppercase text-[1.5rem] font-semibold"
+        >
+          Access : DAO
+        </p>
+        <p class="text-[1.5rem] uppercase text-[1.5rem] font-semibold">
+          You’d Get
+        </p>
+        <p
+          class="bg-black text-white px-10 py-3 uppercase text-[1.5rem] font-semibold"
+        >
+          $Kerocoin
+        </p>
+      </div>
+      <div class="flex justify-around items-center mb-16">
+        <p class="bg-black text-white max-w-[20rem] text-[1.5rem] p-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elitsed doissso
+        </p>
+        <p class="text-[1.5rem] font-bold">
+          Governance <br />+<br />
+          Weightage for Voting
+        </p>
+        <p class="bg-black text-white max-w-[20rem] text-[1.5rem] p-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elitsed doissso
+        </p>
+      </div>
+      <div class="flex justify-around items-center mb-16">
+        <p class="bg-black text-white max-w-[20rem] text-[1.5rem] p-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elitsed doissso
+        </p>
+        <p class="text-[1.5rem] font-bold max-w-[15rem]">
+          Some other info that you might want to include could be added here
+        </p>
+        <p class="bg-black text-white max-w-[20rem] text-[1.5rem] p-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elitsed doissso
+        </p>
+      </div>
+      <div class="flex justify-around items-center mb-16">
+        <p class="bg-black text-white max-w-[20rem] text-[1.5rem] p-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elitsed doissso
+        </p>
+        <p class="text-[1.5rem] font-bold">
+          Governance <br />+<br />
+          Weightage for Voting
+        </p>
+        <p class="bg-black text-white max-w-[20rem] text-[1.5rem] p-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elitsed doissso
+        </p>
+      </div>
+      <div class="flex justify-around items-center mb-16">
+        <p class="bg-black text-white max-w-[20rem] text-[1.5rem] p-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elitsed doissso
+        </p>
+        <p class="text-[1.5rem] font-bold max-w-[15rem]">
+          Some other info that you might want to include could be added here
+        </p>
+        <p class="bg-black text-white max-w-[20rem] text-[1.5rem] p-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elitsed doissso
+        </p>
+      </div>
+    </div>
+
+    <!-- fifth-portion -->
+    <div class="bg-[#37003C]">
+      <div class="py-48 px-14 relative max-w-[99rem] m-auto">
+        <img src="./1231.png" alt="" class="absolute left-32 top-[23rem]" />
+        <div class="">
+          <p class="text-7xl text-white font-extrabold ml-16">Our Roadmap</p>
+        </div>
+        <div class="max-w-[83rem] ml-72 mt-32">
+          <p class="text-3xl font-extrabold text-white pb-5">STAKING</p>
+          <p class="text-[1.5rem] font-medium text-white mb-[4rem]">
+            Once the primary sales are minted out, Staking will be our first
+            general milestone. By providing a staking mechanism to our holders,
+            we are building the very foundation towards a larger goal of keeping
+            our community tight-knit as well as rewarding them through the
+            longer term. The development of the functionalities of this first
+            utility will be initiated with the consultation of the community,
+            more details such as the numbers and protocol will also be disclosed
+            post-launch.
+          </p>
+        </div>
+        <div class="max-w-[83rem] ml-72">
+          <p class="text-3xl font-extrabold text-white pb-5">DAO</p>
+          <p class="text-[1.5rem] font-medium text-white mb-[6rem]">
+            With the advent of Web3 taking on the old internet, it is essential
+            to have a representation of our project within the space in order to
+            positively transform it. Forming a DAO becomes natural as it will
+            also be backed by our staking mechanism, as well as the creation of
+            a governance system to vote officially on the decisions affecting
+            our ecosystem.
+          </p>
+        </div>
+        <div class="max-w-[83rem] ml-72">
+          <p class="text-3xl font-extrabold text-white pb-5">MANGA SERIES</p>
+          <p class="text-[1.5rem] font-medium text-white mb-[6.2rem]">
+            We are proposing to release a manga series with the consultation of
+            our community. This will reinforce the culture around our project
+            and will incorporate story-lines voted and written by some of our
+            community members as well.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- sixth-portion -->
+    <div class="bg-black">
+      <div class="max-w-[99rem] m-auto py-28 px-10">
+        <p class="uppercase text-white text-7xl font-extrabold text-center">
+          Features
+        </p>
+        <div class="grid grid-cols-3 mt-36 gap-16">
+          <div class="text-center bg-[#040505] px-5 py-16">
+            <img src="./group1.png" alt="" class="mx-auto mb-12" />
+            <p class="font-extrabold text-3xl text-white mb-6">UNIQUE</p>
+            <p class="font-medium text-2xl text-white leading-10">
+              We are proposing to release a manga series with the consultation
+              of our community. This will reinforce the culture around our
+              project.
+            </p>
+          </div>
+
+          <div class="text-center bg-[#040505] px-5 py-16">
+            <img src="./group2.png" alt="" class="mx-auto mb-12" />
+            <p class="font-extrabold text-3xl text-white mb-6 uppercase">
+              Community Centered
+            </p>
+            <p class="font-medium text-2xl text-white leading-10">
+              We are proposing to release a manga series with the consultation
+              of our community. This will reinforce the culture around our
+              project.
+            </p>
+          </div>
+
+          <div class="text-center bg-[#040505] px-5 py-16">
+            <img src="./group3.png" alt="" class="mx-auto mb-12" />
+            <p class="font-extrabold text-3xl text-white mb-6 uppercase">
+              Utility-Focused
+            </p>
+            <p class="font-medium text-2xl text-white leading-10">
+              We are proposing to release a manga series with the consultation
+              of our community. This will reinforce the culture around our
+              project.
+            </p>
+          </div>
+
+          <div class="text-center bg-[#040505] px-5 py-16">
+            <img src="./group1.png" alt="" class="mx-auto mb-12" />
+            <p class="font-extrabold text-3xl text-white mb-6">UNIQUE</p>
+            <p class="font-medium text-2xl text-white leading-10">
+              We are proposing to release a manga series with the consultation
+              of our community. This will reinforce the culture around our
+              project.
+            </p>
+          </div>
+
+          <div class="text-center bg-[#040505] px-5 py-16">
+            <img src="./group2.png" alt="" class="mx-auto mb-12" />
+            <p class="font-extrabold text-3xl text-white mb-6 uppercase">
+              Community Centered
+            </p>
+            <p class="font-medium text-2xl text-white leading-10">
+              We are proposing to release a manga series with the consultation
+              of our community. This will reinforce the culture around our
+              project.
+            </p>
+          </div>
+
+          <div class="text-center bg-[#040505] px-5 py-16">
+            <img src="./group3.png" alt="" class="mx-auto mb-12" />
+            <p class="font-extrabold text-3xl text-white mb-6 uppercase">
+              Utility-Focused
+            </p>
+            <p class="font-medium text-2xl text-white leading-10">
+              We are proposing to release a manga series with the consultation
+              of our community. This will reinforce the culture around our
+              project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- seventh-portion -->
+    <div class="mt-44">
+      <div class="flex justify-around content-start mb-44 max-w-[99rem] m-auto">
+        <div class="max-w-[40rem]">
+          <p class="text-[#FF2782] text-3xl font-bold">ABOUT US</p>
+          <p class="text-7xl font-extrabold mt-6">MEET THE TEAM</p>
+        </div>
+        <div class="max-w-[40rem]">
+          <p class="font-medium text-2xl leading-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+            <br /><br />
+            Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-around max-w-[99rem] m-auto">
+        <div>
+          <img src="team1.png" alt="" />
+          <p class="font-bold text-3xl text-center my-6">Cameron Williamson</p>
+          <p class="text-2xl font-medium text-center">Founder</p>
+        </div>
+        <div>
+          <img src="team2.png" alt="" />
+          <p class="font-bold text-3xl text-center my-6">Leslie Alexander</p>
+          <p class="text-2xl font-medium text-center">Advisor</p>
+        </div>
+        <div>
+          <img src="team3.png" alt="" />
+          <p class="font-bold text-3xl text-center my-6">Robert Fox</p>
+          <p class="text-2xl font-medium text-center">Developer</p>
+        </div>
+      </div>
+      <div class="h-1 bg-black my-32 max-w-[99rem] m-auto"></div>
+      <p class="text-7xl font-bold text-center mb-32">COUNCIL</p>
+      <div class="grid grid-cols-3 max-w-[99rem] m-auto">
+        <div>
+          <img src="council1.png" alt="" />
+          <p class="text-2xl font-medium text-center my-8 mx-auto max-w-sm">
+            Lorem ipsum dolor sit amet consectetur adipiscing
+          </p>
+        </div>
+
+        <div>
+          <img src="council2.png" alt="" />
+          <p class="text-2xl font-medium text-center my-8 mx-auto max-w-sm">
+            Lorem ipsum dolor sit amet consectetur adipiscing
+          </p>
+        </div>
+
+        <div>
+          <img src="council3.png" alt="" />
+          <p class="text-2xl font-medium text-center my-8 mx-auto max-w-sm">
+            Lorem ipsum dolor sit amet consectetur adipiscing
+          </p>
+        </div>
+
+        <div>
+          <img src="council4.png" alt="" />
+          <p class="text-2xl font-medium text-center my-8 mx-auto max-w-sm">
+            Lorem ipsum dolor sit amet consectetur adipiscing
+          </p>
+        </div>
+
+        <div>
+          <img src="council5.png" alt="" />
+          <p class="text-2xl font-medium text-center my-8 mx-auto max-w-sm">
+            Lorem ipsum dolor sit amet consectetur adipiscing
+          </p>
+        </div>
+
+        <div>
+          <img src="council6.png" alt="" />
+          <p class="text-2xl font-medium text-center my-8 mx-auto max-w-sm">
+            Lorem ipsum dolor sit amet consectetur adipiscing
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- eight-portion -->
+    <div class="bg-[#FF2782] mt-36">
+      <div class="max-w-[99rem] m-auto py-32">
+        <p class="text-white text-7xl font-bold text-center">FAQs</p>
+        <div class="my-24">
+          <p class="text-3xl text-white font-bold mb-3 text-center">
+            WHAT IS THE TOTAL SUPPLY OF PROJECT?
+          </p>
+          <p class="text-2xl text-white font-medium text-center">
+            There are a Total of 3,333 NFTs available for mint.
+          </p>
+        </div>
+
+        <div class="my-24">
+          <p class="text-3xl text-white font-bold mb-3 text-center">
+            WHAT IS THE PRICE FOR ONE NFT?
+          </p>
+          <p class="text-2xl text-white font-medium text-center">
+            0.15 Ether for Whitelist Members 0.25 Ether for Public Sale Members
+          </p>
+        </div>
+
+        <div class="my-24">
+          <p class="text-3xl text-white font-bold mb-3 text-center">
+            HOW DO I JOIN THE WHITELIST?
+          </p>
+          <p
+            class="text-2xl text-white font-medium text-center m-auto max-w-6xl"
+          >
+            In order to join the whitelist, you need to join our Discord server
+            and have to reach an activity level of 10 AND invite at least 15
+            people to join the server. Your name will then be automatically
+            added to the whitelist and you will be able to send your wallet
+            address to sign up. For more information visit the join-whitelist
+            channel on our discord.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ninth-portion -->
+    <div class="bg-black">
+      <div class="max-w-5xl mx-auto py-44">
+        <p class="text-7xl text-white font-bold text-center">GET IN TOUCH</p>
+        <p class="text-white text-2xl font-normal text-center my-24">
+          <strong>Send us an Email at SayHello@domain.com</strong>
+          <br /><br />
+          We’ll get back to you as soon as we can Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore
+        </p>
+        <img src="icons.png" alt="" class="mx-auto mt-52" />
+      </div>
+    </div>
+  </body>
 </html>
